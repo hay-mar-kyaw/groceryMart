@@ -1,0 +1,319 @@
+@media (max-width:800px){
+    #headerSection {
+        margin-top: 30px;
+    }
+    
+    #nav{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #nav a{
+        color: #fff;
+    }
+    #nav  i{
+       
+        color: #fff;
+       
+    }
+    #nav > .container{
+        flex-direction: column;
+    }
+    #nav .navbar-brand{
+        /* border: 1px solid orange; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 20px;
+    }
+    #nav .navbar-brand #hamburger{
+        display: block;
+        color: #fff;
+        background-color:#d2691e;
+        width: 40px;
+        font-size: 20px;
+        border: none;
+        border-radius: 4px;
+        text-align: center;
+
+    }
+    #nav .navbar-brand .mobile-navbar-icon{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav .navbar-brand .mobile-navbar-icon li{
+        padding: 0 20px;
+    }
+    
+    #nav .navbar-menu{
+        flex-direction: column;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    #nav .navbar-menu.active{
+        height: 150px;
+        padding: 10px 0;
+    }
+    #nav .navbar-menu li{
+        /* border: 1px solid red; */
+        padding: 5px 20px;
+        /* text-align: center; */
+    }
+    
+    #nav #navbar-menu li:hover{
+        background-color:rgba(255,204,153,0.5);
+        
+    }
+    
+    #nav .navbar-icon{
+        display: none;
+    }
+    /*Header Section*/
+    #headerSection .container{
+        flex-direction: column;
+    }
+    /* Header  */
+    
+    #headerSection > .container{
+        flex-direction: column;
+        height: 70vh;
+    }
+    #headerSection .content{
+        /* border: 1px solid green; */
+        flex-basis: 100%;
+        line-height: 50px;
+    }
+    #headerSection .headline{
+        font-size: 4rem;
+    }
+    
+    #headerSection .showDealTime-div #day,
+    #headerSection .showDealTime-div #hour,
+    #headerSection .showDealTime-div #minute,
+    #headerSection .showDealTime-div #second
+    {
+        font-size: 3.5rem;
+    }
+      
+    #headerSection .image-div img{
+        display: none;
+    }
+    /* Collection   */
+    #collection > .container{
+        flex-direction: column;
+    }
+    #collection .right .card2:hover .content{
+        height: 320px;
+        opacity: 0.9;
+        width: 100%;
+        bottom: 5px;
+    }
+    /* Product Detail  */
+    #product-detail > .container{
+        flex-direction: column;
+    }
+    /* Scribe Section  */
+    #subscribeSection .container {
+        border : 1px solid green;
+        flex-direction: column;
+    }
+    #subscribeSection .card2,
+    #subscribeSection .card3{
+        display: none;
+        
+    }
+    #subscribeSection .card1,
+    #subscribeSection .card4{
+        border: 2px solid red;
+        width: 100%;
+    }
+    /* #topbrand .cards{
+        flex-direction: column;
+    }*/
+    #topbrand .prev{
+        left: 5px;
+    }
+    #topbrand .next{
+        right: 5px;
+    } 
+     /* News-letter  */
+     #news-letter .news-letter-text{
+        text-align: center;
+        /* line-height: 200px; */
+        position: absolute;
+        left: 20px;
+        top: 120px;
+    }
+
+    
+}
+
+@media (max-width:600px){
+    /* Header  */
+    
+    #headerSection > .container{
+        flex-direction: column;
+        height: 70vh;
+    }
+    #headerSection .content{
+        /* border: 1px solid green; */
+        flex-basis: 100%;
+        line-height: 50px;
+    }
+    #headerSection .headline{
+        font-size: 3rem;
+    }
+    
+    #headerSection .showDealTime-div #day,
+    #headerSection .showDealTime-div #hour,
+    #headerSection .showDealTime-div #minute,
+    #headerSection .showDealTime-div #second
+    {
+        font-size: 2rem;
+    }
+      
+    #headerSection .image-div img{
+        display: none;
+    }
+
+    /* Product  */
+    .product .cards .card{
+        flex-basis: 45%;
+    }
+
+    /* Blog */
+    #blog .cards{
+        flex-direction: column;
+    }
+
+    /*Collection*/
+    #collection > .container{
+        flex-direction: column;
+    }
+    /*Top Brand*/
+    #topbrand .card1,#topbrand .card2,#topbrand .card3{
+        /* border: 1px solid peru; */
+        flex-basis: 30%;
+        margin: 5px;
+        border-radius: 4px;
+        
+    
+    }
+    #topbrand img{
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 4px;
+        
+    }
+     /* News-letter  */
+     #news-letter .news-letter-text{
+        text-align: center;
+        /* line-height: 200px; */
+        position: absolute;
+        left: 0px;
+        top: 120px;
+    }
+    /* Footer  */
+    #footer > .container{
+        flex-direction: column;
+    }
+    #footer ul{
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 400px){
+    /* Header  */
+    #headerSection > .container{
+        flex-direction: column;
+        height: 80vh;
+    }
+    #headerSection .content{
+        /* border: 1px solid green; */
+        flex-basis: 100%;
+        line-height: 50px;
+    }
+    #headerSection .headline{
+        font-size: 3rem;
+    }
+    
+    #headerSection .showDealTime-div #day,
+    #headerSection .showDealTime-div #hour,
+    #headerSection .showDealTime-div #minute,
+    #headerSection .showDealTime-div #second
+    {
+        font-size: 2rem;
+    }
+      
+    #headerSection .image-div img{
+        display: none;
+    }
+    /* Product */
+    .product .cards{
+        flex-direction: column;
+    }
+    /*Top Brand*/
+    #topbrand .cards{
+        flex-direction: column;
+    }
+    #topbrand .card1,#topbrand .card2,#topbrand .card3{
+        /* border: 1px solid peru; */
+        flex-basis: 30%;
+        margin: 5px;
+        border-radius: 4px;
+        
+    
+    }
+    #topbrand img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 4px;
+        
+    }
+    /* Collection  */
+    #collection .left:hover .content{
+        width: 100%;
+        /* height: 300px; */
+        opacity: 0.9;
+        overflow: hidden;
+        bottom: 0px;
+        
+    }
+    #collection .right .card1:hover .content{
+        height:270px;
+        line-height: 270px;
+        opacity: 0.9;
+        width: 100%;
+        bottom: 0px;
+    }
+    #collection .right .card2:hover .content{
+        height: 230px;
+        line-height: 230px;
+        opacity: 0.9;
+        width: 100%;
+        bottom: 0px;
+    }
+    /* News-letter  */
+    #news-letter .news-letter-text{
+        text-align: center;
+        /* line-height: 200px; */
+        position: absolute;
+        left: 0px;
+        top: 100px;
+    }
+    /*footer*/
+    #footer .container{
+        text-align: center;
+    }
+    #footer .social-medias {
+        border: 1px solid red;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        padding-left: 100px;
+    }
+
+}
